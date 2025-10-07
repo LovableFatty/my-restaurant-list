@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { RestaurantDialog } from '@/components/restaurantDialog';
-import { RestaurantCardBlock } from '@/components/restaurantCardBlock';
-import { Pagination } from '@/components/pagination';
-import { ConfirmationDialog, type ConfirmationType } from '@/components/confirmationDialog';
+import { RestaurantDialog } from '@/components/RestaurantDialog';
+import { RestaurantCardBlock } from '@/components/RestaurantCardBlock';
+import { Pagination } from '@/components/Pagination';
+import { ConfirmationDialog, type ConfirmationType } from '@/components/ConfirmationDialog';
 import { useRestaurants, useCreateRestaurant, useUpdateRestaurant, useDeleteRestaurant } from '@/hooks/useRestaurants';
 import type { RestaurantForm as RestaurantFormType, RestaurantRead } from '@/schemas';
 

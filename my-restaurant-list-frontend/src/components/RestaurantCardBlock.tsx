@@ -1,5 +1,5 @@
 import React from 'react';
-import { RestaurantCard } from './restaurantCard';
+import { RestaurantCard } from './RestaurantCard';
 import type { RestaurantRead } from '@/schemas';
 
 interface RestaurantCardBlockProps {
@@ -33,7 +33,7 @@ export const RestaurantCardBlock: React.FC<RestaurantCardBlockProps> = ({
         </h2>
       )}
       
-      <div className="flex flex-wrap gap-6 justify-center">
+      <div className="grid grid-cols-3 gap-6">
         {restaurants.map((restaurant) => (
           <RestaurantCard
             key={restaurant.id}

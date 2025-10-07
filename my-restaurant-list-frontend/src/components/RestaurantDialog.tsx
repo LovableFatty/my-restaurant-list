@@ -6,7 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import { RestaurantForm } from './restaurantForm';
+import { RestaurantForm } from './RestaurantForm';
 import type { RestaurantForm as RestaurantFormType } from '@/schemas';
 
 interface RestaurantDialogProps {
