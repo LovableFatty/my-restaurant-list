@@ -1,55 +1,58 @@
-# hands-on project https://docs.google.com/document/d/1Xn-fqAsnarJk8sZG6C9Tml9wk2Xxf9HSPrtf8mTXcls/edit?hl=en&tab=t.0
-Single page application?
-apis endpoints:
-- add
-    - object, formfield
-    - backend must update the db (postgres/mongo)
-    - 
-- get
-    - getting the whole list
-    - FE, filter by rating, location, type, ...
+# My Restaurant List
 
-- update
-    - updating only the object.rating
-    - can update the rest as well
-- delete
+A full-stack web application for managing your personal restaurant collection. Built with React, TypeScript, and FastAPI.
 
-Welcome to the Pallas Full Stack Hands On!
+![Restaurant List App](https://img.shields.io/badge/React-19.1.1-blue?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue?style=for-the-badge&logo=typescript)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.118.0-green?style=for-the-badge&logo=fastapi)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.14-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-Your task is to build a simple prototype web app called “My Restaurant List.” Ideally use React on FE and JS/TS/Python for BE.
+## Features
 
-You are encouraged to use any tools you deem necessary. All pragmatic options that a software engineer would use are on the table e.g. component libraries, utility libraries, frameworks, search & documentation, even AI if you want (responsibly). There is no need to do everything from scratch. The data can be handled in any way you see fit, whether that means using a minimalist ‘mock DB’, SQL vs. NoSQL, etc – it’s your call.
+- **Add Restaurants**: Create new restaurant entries
+- **View Collection**: Browse restaurants
+- **Edit Restaurants**: Update restaurant details with a simple interface
+- **Delete with Confirmation**: Remove restaurants with confirmation dialog
+- **UI**: Built with Shadcn UI components and Tailwind CSS
 
-Don’t worry about deployment or environments. This is 100% local.
+## Tech Stack
 
-Take creative liberty with your design choices to build something sensible and aesthetic with a clear UX — there are no Figma mockups or wireframes.
+### Frontend
+- **React** - React
+- **TypeScript** - Type-safe development
+- **Vite** - Build tool
+- **Tailwind CSS** - CSS framework
+- **Shadcn UI** - Component library
+- **React Query (TanStack Query)** - Data fetching and caching
+- **React Hook Form** - Forms
+- **Zod** - Schema validation
 
-If you are familiar and comfortable with the technologies Pallas uses, it would be great to see you use some of them. If not, that’s ok, but please use something similar or comparable.
-Frontend suggestions
-React (must)
-Vite
-TS
-Shadcn UI (component library based on Radix primitives)
-Tailwind CSS
-React Query
-React Router
-Backend suggestions
-Python or JS/TS
-FastAPI or Node/Express
-Feature Requirements
-Add a restaurant
-Add a restaurant to your list, where each restaurant has:
-Name
-Type (of cuisine)
-Image (URL — no need for file picker or uploading)
-Use these: https://unsplash.com/s/photos/restaurant-food?license=free
-Location (city — no need to use a location API, just text)
-Rating (out of 5 stars)
-[optional] Description (short summary, around 2-3 lines) 
-Price range (from $ to $$$)
-View restaurants 
-Restaurants are represented as cards in a grid. Take creative liberty but follow familiar, aesthetic card grid design patterns seen in popular UI’s.
-Actions for restaurant 
-Each restaurant card has an action menu with two options: edit, and delete.
-For simplicity, limit ‘edit’ to only editing the rating. If you have more time, you can implement ‘edit’ for the rest of the fields.
-Delete should have a warning mechanism, such as a confirm dialog
+### Backend
+- **Python** - Python 
+- **FastAPI** - Py web framework
+- **SQLModel** - SQL db
+- **Pydantic** - Data validation for Python
+- **SQLite** - Lightweight db for local development
+
+### Project Structure
+```
+my-restaurant-list/
+├── my-restaurant-list-frontend/     # React frontend
+│   ├── src/
+│   │   ├── components/             # Reusable UI components
+│   │   ├── hooks/                  # Custom React hooks
+│   │   ├── services/              # API service layer
+│   │   └── schemas/               # TypeScript schemas
+│   └── package.json
+├── my-restaurant-list-backend/      # FastAPI backend
+│   ├── app/
+│   │   ├── models.py              # Database models
+│   │   ├── schemas.py             # Pydantic schemas
+│   │   ├── endpoint.py            # API endpoints
+│   │   └── main.py                # FastAPI application
+│   └── requirements.txt
+└── README.md
+```
+
+
+
